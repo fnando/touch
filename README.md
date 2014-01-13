@@ -2,6 +2,10 @@
 
 Touch a parent's collection on ActiveRecord.
 
+## Why not just using `belongs_to :assoc, touch: true`?
+
+Well, you'll have a fine control for each association, since `touch: true` updates the `updated_at` magic field.
+
 ## Installation
 
 Add this line to your application's Gemfile:
