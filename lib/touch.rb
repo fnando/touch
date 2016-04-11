@@ -16,6 +16,7 @@ module Touch
     end
 
     private
+
     def add_collection_touch_for(association_name, event)
       class_eval <<-RUBY, __FILE__, __LINE__ + 1
         def collection_touch_event_for_#{association_name}_on_#{event}

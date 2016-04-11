@@ -1,0 +1,11 @@
+language: ruby
+sudo: false
+cache: bundler
+notifications:
+  email: false
+rvm:
+- 2.3.0
+- '2.2'
+env:
+  global:
+    secure: Y6h1xkzJFjwnm0Dzn0EpNKIKyXdzyGPws4rXq7Z/VGnu0tjwBpW9/aM2ecgNjknU/8EAan4fMOG2EZPr2qzbjOR/ZVijdhsIAA0PCTlVSdTqEnthUvaJHJg8DeTcfAN0Rj/XJ/EiTXrYJWIFUYGUsrnku/0MRoSxRYL8Kp8Q+fY=

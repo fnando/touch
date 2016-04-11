@@ -1,13 +1,15 @@
+ActiveRecord::Migration.verbose = false
+
 ActiveRecord::Schema.define(:version => 0) do
   create_table :users do |t|
     t.datetime :tasks_updated_at
-    t.timestamps
+    t.timestamps null: false
   end
 
   create_table :tasks do |t|
     t.string :title
     t.belongs_to :user
-    t.timestamps
+    t.timestamps null: false
   end
 end
 

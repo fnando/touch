@@ -1,5 +1,11 @@
 # Touch
 
+[![Travis-CI](https://travis-ci.org/fnando/touch.png)](https://travis-ci.org/fnando/touch)
+[![Code Climate](https://codeclimate.com/github/fnando/touch/badges/gpa.svg)](https://codeclimate.com/github/fnando/touch)
+[![Test Coverage](https://codeclimate.com/github/fnando/touch/badges/coverage.svg)](https://codeclimate.com/github/fnando/touch/coverage)
+[![Gem](https://img.shields.io/gem/v/touch.svg)](https://rubygems.org/gems/touch)
+[![Gem](https://img.shields.io/gem/dt/touch.svg)](https://rubygems.org/gems/touch)
+
 Touch a parent's collection on ActiveRecord.
 
 ## Why not just using `belongs_to :assoc, touch: true`?
