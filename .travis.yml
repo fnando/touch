@@ -4,8 +4,15 @@ cache: bundler
 notifications:
   email: false
 rvm:
-- 2.3.0
-- '2.2'
+- 2.5.2
+before_install:
+- gem install bundler
+before_script:
+- curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+- chmod +x ./cc-test-reporter
+- "./cc-test-reporter before-build"
+after_script:
+- "./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT"
 env:
   global:
-    secure: Y6h1xkzJFjwnm0Dzn0EpNKIKyXdzyGPws4rXq7Z/VGnu0tjwBpW9/aM2ecgNjknU/8EAan4fMOG2EZPr2qzbjOR/ZVijdhsIAA0PCTlVSdTqEnthUvaJHJg8DeTcfAN0Rj/XJ/EiTXrYJWIFUYGUsrnku/0MRoSxRYL8Kp8Q+fY=
+    secure: UZinIxzsIK/O0CiYvV2JugllqHcEKqMhV/mFBr4DDQGElDJ4ZzFDe1NMJVgTa4XhrF8ucO2sC/luNfHGTbn04oYzBh/8fyiRkCHci4WniDlpgYJXYDFJiSexuxDCSfttDOS1nJ8mlF481zWZ4ncTljtfL5xpWKbvezOBNtM8yhs=
